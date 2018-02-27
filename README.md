@@ -1,5 +1,10 @@
 # SEGNET-FACADE
 
+# Installation
+See the Dockerfile in docker/gpu. 
+You may may use [nvidia-docker](https://github.com/NVIDIA/nvidia-docker/wiki/Installation) to run this code 
+(run start-machine.sh) or you may consider the Dockerfile as instructions on how to configure your own machine. 
+
 # Requirements (or Recommendations)
 - An NVIDIA graphics card / GPU with a fair amount of RAM.  I use an 11Gb card for training and inference, you may be able to get by with less.  During inference, my system reports that a bit over 4Gb is used, during training it is closer to 8Gb. You may be able to change the code to use `cpu` mode but I have not run this code on a machine without NVIDA hardware. 
 - A system with a decent amount of RAM. I expect that 32Gb would be a good number; all of my machines have much more than that. 
