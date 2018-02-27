@@ -110,6 +110,7 @@ def match_objects_uniquely(candidates, targets, threshold=0.5):
 
     target_set = set(targets)
     matching = nx.max_weight_matching(g, maxcardinality=True)  # <- a dict with  v->c and c->v both
+    matching = dict(matching)
     hits = [(t, c) for (t, c) in matching.items() if t in target_set]
     return hits
 

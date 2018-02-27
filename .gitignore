@@ -121,3 +121,6 @@ data/
 .zip
 
 scripts/tmp
+
+# trained weights
+*caffemodel
